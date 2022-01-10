@@ -1,0 +1,107 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
+    background-color: #fff;
+    font-size: var(--text-xl);
+    letter-spacing: var(--letter-spacing);
+    transition: all .4s ease-in-out;
+    z-index: 2;
+    font-family: "lobster two";
+  }
+  /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Mise en forme des éléments du menu */
+  .menu__list {
+    width: 98%;
+  }
+  
+  .menu__item {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F1901E;
+    margin-left: -30px;
+    text-align: center;
+  }
+  
+  .menu__link {
+    color: #F1901E;
+    text-decoration: none;
+    font-size:22px;
+    line-height: 27px;
+  }
+  
+  
+  /* Mise en forme du bouton de menu "Hamburger" */
+  .menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px;  
+    margin-left: 85%;
+   
+  }
+  
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: '';
+    background: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+  /* Technique pour transformer les 3 barres du bouton de menu en croix
+  Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+  .menu-btn--open .menu-btn__bar,
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(135deg);
+  }
+  
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+    background-color: var(--gray-black);
+  }
+
+  .boutonmenu {
+    float:right;
+    margin-right:40px;  
+    margin-top:10px;
+}
+
+button.header__menu-btn.menu-btn{
+    border:0px solid red;
+    background-color:transparent;
+}
+
+ul {
+    list-style-type: none;
+}

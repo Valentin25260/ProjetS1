@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+
+}
+
+.header{
+    width: 100%;
+    background-color: #FDC383;
+
+   
+
+}
+
+.header__logo{
+    margin-left: 2%;
+
+}

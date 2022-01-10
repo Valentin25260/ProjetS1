@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+    </header>
+        
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+              <li class="menu__item"><a class="menu__link" href="article1.html">Première vague du féministe en france</a></li>
+              <li class="menu__item"><a class="menu__link" href="article2.html">Taylor Swift nouvelle figure du féminisme</a></li>
+              <li class="menu__item"><a class="menu__link" href="article3.html">Gloria Allred : L’avocate des femmes</a></li>
+              <li class="menu__item"><a class="menu__link" href="galeriefrise.html">Galerie & Frise</a></li>
+              <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+              <li class="menu__item"><a class="menu__link" href="projets.html">Autres Projets</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">Contact à propos</a></li>          
+            </ul>
+        </nav>
+
+    
+    
+    <main class="main__blanc">
+        
+    <div class="bloc">   
+        <h2> À propos </h2>
+
+        <p class="texte__chapeau">
+            Je m'appelle Valentin Tholomier je suis en première année de MMI (Métier du multimédia et de l'internet)
+            à Montbéliard. J’ai réalisé ce site dans le but d’un projet donné par les enseignants de l’établissement. 
+            Si vous avez repéré une erreur où vous souhaitez apporter votre aide pour compléter le site, 
+            n’hésitez pas à me contacter parmi ces différentes possibilités.
+        </p>
+    </div>
+
+    <div class="bloc">   
+        <h2> Contact </h2>
+
+        <p>
+            Voici les différents moyens de me contacter si vous avez besoin d’un rensigenseignement.
+            <br><br>
+
+            - Adresse mail  :  vtholomier@gmail.com<br>
+             
+            - Instagram       :  Tlm_Valentin<br>
+            - Téléphone        :  07 67 57 18 75<br>
+            
+        </p>
+    </div>
+
+    
+ 
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Groupe C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            Pour me contacter par mail <a href="contact.html"><strong>cliquez ici</strong></a>
+        </p>
+
+        <p class="footer__mmi">Projet réalisé dans le cadre d’un exercice pédagogique 
+            au département MMI de Montbéliard
+        </p>
+
+
+
+    </footer>
+</body>
+
+
+</html>

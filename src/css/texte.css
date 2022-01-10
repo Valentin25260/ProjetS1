@@ -1,0 +1,79 @@
+h3 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #F1901E;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+h2{
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    color: #F1901E;
+    
+}
+
+p{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* or 123% */
+
+    text-align:justify;
+
+    color: #000000;
+}
+
+.texte__chapeau{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align:justify;
+    color: #000000;
+}
+
+h4{
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+}
+
+h5{
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: 0%;
+
+}
+
+.texte__intro__article{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+

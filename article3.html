@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+    </header>
+        
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+              <li class="menu__item"><a class="menu__link" href="article1.html">Première vague du féministe en france</a></li>
+              <li class="menu__item"><a class="menu__link" href="article2.html">Taylor Swift nouvelle figure du féminisme</a></li>
+              <li class="menu__item"><a class="menu__link" href="article3.html">Gloria Allred : L’avocate des femmes</a></li>
+              <li class="menu__item"><a class="menu__link" href="galeriefrise.html">Galerie & Frise</a></li>
+              <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+              <li class="menu__item"><a class="menu__link" href="projets.html">Autres Projets</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html">Contact à propos</a></li>          
+            </ul>
+        </nav>
+
+    
+    
+    <main class="main__blanc">
+        
+    <div class="bloc">   
+        <h2>Gloria Allred : 
+            L’avocate des femmes</h2>
+
+        <p class="texte__chapeau">
+            Gloria Allred est une avocate de renommée mondiale, 
+            tout au long de sa vie elle défendra des femmes contre les inégalités, 
+            les agressions sexuelles… Vous découvrirez tout ce qu’elle à pu accomplir et ce qu’elle 
+            continue d’accomplir au cours de sa vie.
+        </p>
+    </div>
+
+    
+    <div class="bloc">   
+        <h4>Mise en context de la vie de Gloria Allred </h4>
+    
+            <p> 
+                En 2018 Netflix sort un film documentaire sur Gloria Allred et qui retrace son travail 
+                en tant qu’avocate et les faits accomplis. Elle se confie aussi sur des moments difficiles de sa vie. 
+                Gloria est une des plus célèbres avocates pour les droits de la femme du pays. 
+            </p>
+
+            <p> 
+                Gloria Allred est née le 3 juillet 1941 à Philadelphie en Pennsylvanie. 
+                Sa mère qui s’appelle Stella est venue d’Angleterre à l’âge de 20 ans et elle est femme au foyer. 
+                Son père Morris Bloom est né aux États-Unis et il travaillait 6 jours par semaine dans le commerce.
+                 Elle est fille unique et passera sa jeunesse en Pennsylvanie ce qui n’était pas facile 
+                 tous les jours de vivre dans une grande ville comme celle-là car sa famille était assez pauvre. 
+                 Elle obtiendra ses concours à l’Université de New York et J.D. cum laude de la 
+                 Loyola University School of Law à Los Angeles. Gloria Allred recevra un doctorat en droit 
+                 à l’université de West Los Angeles.
+            </p>
+    </div>
+
+    <div class="bloc">
+        <img class="main__article1" src="public/img/article3.svg">
+
+        <h5>Photo de la première manifestation pour le féminisme</h5>
+    </div>
+
+    <div class="bloc">    
+            
+        <p> 
+            Gloria Allred raconte un moment la pire période de sa vie. 
+            Elle avait la vingtaine elle part en vacances au Mexique avec une amie. 
+            Et rencontre sur place un médecin qui l’invite à dîner et elle accepta l’invitation. 
+            Une fois le repas terminé il lui dit «je dois aller à l’hôpital pour voir mes patients » 
+            elle décide de l’accompagner. Ensuite il lui dit «je dois aller voir d’autres passants
+             qui ne sont pas à l’hôpital » elle décide d’y aller avec lui. 
+             Elle ouvre la porte de l’appartement personne dedans, le médecin sort une arme et la viole. 
+             De plus elle apprit qu’elle était enceinte suite au viol, elle a dû se faire avorter mais 
+             à cette époque s’était interdit. Elle fera un avortent clandestin et Gloria a failli mourir.
+        </p>
+
+        <p> 
+            Elle rencontre Peyton Bray, lui aussi étudiant à l'université de Pennsylvanie. 
+            Ils se sont mariés et elle accoucha de sa fille Lisa à l’âge de 20 ans. 
+            Elle raconte qu’elle n’avait jamais fait à manger ni changer une couche et que tenir sa fille 
+            dans ses bras a été un sacré choc pour elle. Elle se sépare de son mari à cause de ses soucis mentaux 
+            et il mettra fin à ses jours une vingtaine d’années plus tard. En racontant cette histoire 
+            au grand public elle montra qu’une femme pouvait être forte et se débrouiller toute seule déjà à l’âge 
+            de 20 ans.
+        </p>
+    </div>
+
+    <div class="bloc">   
+        <h4> Son combat pour le féminisme </h4>
+    
+            <p> 
+                Tout au long de sa vie elle se battra contre les inégalités homme-femme comme par exemple 
+                les différences de prix d’un menu à un restaurant suivant le sexe de la personne. 
+                Ou encore les rayons pour enfants qui sont sexistes. Ou encore elle a attaqué un magasin qui 
+                faisait payer plus cher aux femmes qu’aux hommes les retouches d’habits.
+            </p>
+
+            <p> 
+                Elle prit en charge la défense de femme contre le racisme, les droits des femmes, l’abus sexuel 
+                et de pédophilie. C’est Gloria Allred qui défendra 20 femmes victimes d’avoir été abusé sexuelle 
+                et drogué par Bill Cosby ou commis des actes contre elles. Cette affaire fut publique 
+                à la télévision et elle gagna le procès.
+            </p>
+    </div>
+
+    <div class="bloc">
+        <img class="main__article1" src="public/img/gloria.svg">
+
+        <h5>Photo de femmes manifestants pour le droit de vote</h5>
+    </div>
+
+    <div class="bloc">    
+            
+        <p> 
+            Gloria Allred est toujours active et se bat pour la liberté et l’égalité des femmes à l’âge de 80 ans, 
+            elle fait partie des figures du féminisme. 
+        </p>
+    </div>
+
+    <div class="bloc">    
+            
+        <p> 
+            J’espère que mes 3 articles vous ont plu et que le sujet du féminisme vous a intéressé je vous propose 
+            d'aller découvrir d’autres figures du féminisme en cliquant ici, qu’ont elles bien pu accomplir 
+            pour être connu du grand public. Et il y a aussi une frise chronologique qui regroupe les différents 
+            événements qui ont marqué le féminisme
+        </p>
+    </div>
+
+    <a href="#header" class="header__fleche"><img src="public/img/fleche.svg" alt="fleche"></a>
+
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Groupe C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            Pour me contacter par mail <a href="contact.html"><strong>cliquez ici</strong></a>
+        </p>
+
+        <p class="footer__mmi">Projet réalisé dans le cadre d’un exercice pédagogique 
+            au département MMI de Montbéliard
+        </p>
+
+
+
+    </footer>
+</body>
+
+
+</html>
