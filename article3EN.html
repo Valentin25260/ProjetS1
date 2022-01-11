@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <main class="main__blanc">
+        
+            <div class="bloc">   
+                <h2>Gloria Allred: 
+                    Women's Advocate</h2>
+        
+                <p class="texte__chapeau">
+                    Gloria Allred is a world renowned lawyer, 
+                    throughout her life she defended women against inequality, sexual assault.., 
+                    sexual assault... You will discover all that she has accomplished and what she continues to accomplish 
+                    continue to accomplish during her life.
+                </p>
+            </div>
+        
+            
+            <div class="bloc">   
+                <h4>Contextualization of the life of Gloria Allred </h4>
+            
+                    <p> 
+                        In 2018 Netflix is releasing a documentary film about Gloria Allred that chronicles her work 
+                        as an attorney and the facts of her case. She also opens up about some difficult moments in her life. 
+                        Gloria is one of the most famous women's rights lawyers in the country. 
+                    </p>
+        
+                    <p> 
+                        Gloria Allred was born on July 3, 1941 in Philadelphia, Pennsylvania. 
+                        Her mother named Stella came from England when she was 20 years old and is a homemaker. 
+                        Her father Morris Bloom was born in the United States and worked 6 days a week in commerce.
+                        She was an only child and spent her youth in Pennsylvania, which was not easy to do 
+                        She was an only child and spent her youth in Pennsylvania, which was not easy to live in a big city like that because her family was quite poor. 
+                        She graduated from New York University and received a J.D. cum laude from Loyola University School of Law in Los Angeles. 
+                        Loyola University School of Law in Los Angeles. Gloria Allred will receive her J.D. from 
+                        from West Los Angeles University.
+                    </p>
+            </div>
+        
+            <div class="bloc">
+                <img class="main__article1" src="public/img/article3.svg">
+        
+                <h5>Photo from the first feminist demonstration</h5>
+            </div>
+        
+            <div class="bloc">    
+                    
+                <p> 
+                    Gloria Allred recounts the worst time of her life. 
+                    She was in her twenties and went on vacation to Mexico with a friend. 
+                    There she met a doctor who invited her to dinner and she accepted the invitation. 
+                    Once the meal was over he told her "I have to go to the hospital to see my patients". 
+                    she decided to accompany him. Then he said "I have to go and see other passers-by
+                    who are not in the hospital" she decides to go with him. 
+                    She opened the door of the apartment and nobody was in it, the doctor took out a gun and raped her. 
+                    She also learned that she was pregnant as a result of the rape, she had to have an abortion but at that time it was forbidden. 
+                    at that time was forbidden. She had an illegal abortion and Gloria almost died.
+                </p>
+        
+                <p> 
+                    She met Peyton Bray, also a student at the University of Pennsylvania. 
+                    They married and she gave birth to her daughter Lisa at the age of 20. 
+                    She says that she had never cooked or changed a diaper and that holding her daughter in her arms 
+                    in her arms was quite a shock for her. She separated from her husband because of his mental problems 
+                    and he ended his life some twenty years later. By telling this story 
+                    public she showed that a woman could be strong and stand on her own two feet even at the age of 
+                    20 years old.
+                </p>
+            </div>
+        
+            <div class="bloc">   
+                <h4> Her fight for feminism </h4>
+            
+                    <p> 
+                        Throughout her life she fought against the inequalities between men and women such as 
+                        the differences in price of a menu at a restaurant depending on the sex of the person. 
+                        Or the sexist children's shelves. Or she attacked a store that 
+                        that charged women more than men for alterations to their clothes.
+                    </p>
+        
+                    <p> 
+                        She took on the defense of women against racism, women's rights, sexual abuse 
+                        and pedophilia. It was Gloria Allred who defended 20 women who had been sexually abused and drugged by Bill Cosby or 
+                        and drugged by Bill Cosby or committed acts against them. This case was publicized 
+                        on television and she won the case.
+                    </p>
+            </div>
+        
+            <div class="bloc">
+                <img class="main__article1" src="public/img/gloria.svg">
+        
+                <h5>Photo of women demonstrating for the right to vote</h5>
+            </div>
+        
+            <div class="bloc">    
+                    
+                <p> 
+                    Gloria Allred is still active and fights for the freedom and equality of women at the age of 80, 
+                    She is one of the figures of feminism. 
+                </p>
+            </div>
+        
+            <div class="bloc">    
+                    
+                <p> 
+                    I hope you liked my 3 articles and that the subject of feminism interested you, I suggest you 
+                    to go and discover other feminist figures by clicking <a href="galeriefriseEN.html" class="texte__ici">here</a>,what have they accomplished 
+                    to be known by the general public. And there is also a timeline which gathers the different 
+                    events that have marked feminism
+                </p>
+            </div>
+        
+            <a href="#header" class="header__fleche"><img src="public/img/fleche.svg" alt="fleche"></a>
+
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contactEN.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

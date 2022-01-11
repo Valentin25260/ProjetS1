@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <div class="bloc">   
+            <h2>  Taylor Swift new figure of feminise </h2>
+    
+            <p class="texte__chapeau">How Taylor Swift has managed to use her global influence to help the feminist 
+                to help the feminist movement move forward.
+            </p>
+        </div>
+    
+        
+        <div class="bloc">   
+            <h4> Her fight for feminism  </h4>
+        
+                <p> 
+                    Taylor Swift is known all over the world for her music and her involvement in feminism. 
+                    So I decided to choose this person as today's feminist. 
+                    She is 30 years old and is an actress, businesswoman, singer-songwriter. 
+                    With more than 40 million records sold worldwide she is one of the greatest artists in history. 
+                    in history. She uses her global success and influence to promote women's rights and fight against 
+                    and to fight against the inequalities to the women. 
+                    Little by little the years pass and her musical style changes, turning to the Pop 
+                    It is from this moment that she becomes a figure of feminism.
+                </p>
+        </div>
+    
+        <div class="bloc">
+            <img class="main__article1" src="public/img/article2.svg">
+    
+            <h5>Taylor Swift on the cover of a book for feminism</h5>
+        </div>
+    
+        <div class="bloc">    
+                
+            <p> 
+                Her fight for feminism and her convictions about the strength of women are more and more visible in her 
+                more and more in her music videos. Before, her music videos were all about being a princess, 
+                prejudice of a girl while now Taylor Swift is represented as a heroine and warrior 
+                warrior especially in her clip Bad Blood. No more scenes in Disney dresses, now 
+                we see scenes of motorcycle races, boxing rings, fights and explosions. 
+                We are shown strong women who know how to fight and defend themselves. It is not all she collaborates 
+                with Selena Gomez, Zendaya who are also involved in feminism.
+    
+            </p>
+    
+            <p> 
+                For its second clip entirely feminist realized in 2020 the clip will make a success. 
+                The clip "The Man" which was directed, written and played by Taylor Swift denounces the inequalities 
+                between men and women and how life is easier as a man. 
+                She plays a man with a string of conquests who is rich and respected. 
+                She says a feminist message in her chorus "I'm so sick of running as fast as I can, Wondering 
+                if I'd get there quicker if I was a man" this sentence tries to make people aware of the difficulties 
+                difficulties that women encounter in everyday life
+    
+            </p>
+        </div>
+    
+        <div class="bloc">   
+            <h4>Difficult moments of her life</h4>
+        
+                <p> 
+                    In her documentary on the Netflix platform, Taylor denounces the stereotypes of the society on 
+                    the woman's physique and the way she should behave. 
+                    She was the victim of many criticisms about her body, either too thin or too fat, 
+                    She said in an interview "It's just fucking impossible."
+                    Taylor Swift suffered a sexual assault in 2013 by a the DJ David Mueller. 
+                    Since this assault the feminist became much more involved. 
+                    She filed a complaint two years later in 2015. Taylor Swift won the case 1 year later 
+                    thanks to this victory she is highlighted during the #MeToo movement. 
+                    
+                </p>
+        </div>
+    
+        <div class="bloc">
+            <img class="main__article1" src="public/img/taylor.svg">
+    
+            <h5>Photo of Taylor Swift singing</h5>
+        </div>
+    
+        <div class="bloc">    
+                
+            <p> 
+                To conclude today, Taylor Swift is an icon of feminism, women's struggle and 
+                the fight against gender inequality. She wants to change the vision and the prejudices that 
+                people have about women. This feminist doesn't only show her fans but everyone what the 
+                the world what the rights and freedoms of women are.
+            </p>
+        </div>
+    
+        <div class="bloc">   
+        <a href="article3EN.html">
+            <p> 
+                I invite you to go and see my 3rd article which is as interesting as Taylor Swift's one and even more.
+                 even more. You will discover if you don't know her, the most famous lawyer. 
+                 You will learn the different moments of her life that are tragic and what pushed her and what 
+                 what made her realize that it was necessary to fight for the rights of women.
+    
+            </p>
+    
+            <img class="main__article1" src="public/img/article3.svg">
+    
+            <h3> Gloria Allred: Women's Advocate </h3>
+    
+            <p class="texte__intro__article">
+                Gloria Allred is a world-renowned lawyer, throughout her life she will defend women against 
+                against inequalities, sexual aggressions... 
+                You will discover all that she was able to accomplish and what she continues to accomplish during her life. 
+            </p>
+        </a>
+        </div>
+    
+        <a href="#header" class="header__fleche"><img src="public/img/fleche.svg" alt="fleche"></a>
+
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contactEN.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

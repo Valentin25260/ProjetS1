@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <div class="bloc">   
+            <h2> First wave of feminism in France </h2>
+
+            <p class="texte__chapeau">Where did the first feminists appear from, how did they manage to make themselves heard 
+                to make themselves heard and start to have positive results in their fight 
+                their struggle for equality between men and women.
+            </p>
+        </div>
+
+        
+        <div class="bloc">   
+            <h4>Beginning of the feminist in France</h4>
+        
+                <p> 
+                    The first French feminists appeared in France in the early 1860s 
+                    and end in 1945. André Léo, whose real name was Victoire Léodile Béra, took advantage of the 
+                    relative freedom promoted by the second Empire which is directed by Napoleon Bonaparte at that time, 
+                    to publish works dedicated to the equality of the sexes. In 1866, she creates 
+                    the "Association for the improvement of women's education" and in 1868, she publishes a text defending the equality of 
+                    a text defending the equality of the sexes which is at the origin of the first French feminist group. 
+                    She was not the only one to defend these ideas, there was also Julie Daubié who was the first woman to obtain the 
+                    to obtain the baccalaureate in 1861.
+                </p>
+        </div>
+
+        <div class="bloc">
+            <img class="main__article1"src="public/img/artcile1.png">
+
+            <h5>Photo of the first demonstration for feminism</h5>
+        </div>
+
+        <div class="bloc">    
+                
+            <p> 
+                Despite the beginning of the feminist movement that is starting to become more and more concrete 
+                there are some misunderstandings about what is important. One group prefers to emphasize 
+                one group prefers to emphasize the education of girls while the other wants civil equality above all. In 1878, 
+                takes place the International Congress of the right of the women which is centered on the improvement 
+                of the right in the current life (right of work, recognition of the domestic work, etc.). 
+                Very few people were interested in political rights, except for a minority of people who demanded 
+                equality between men and women.
+            </p>
+
+            <p> 
+                The end of the nineteenth century is impacted by the beginning of groups that are created with the aim of having 
+                complete equality. The majority of the feminists agree to opt for a strategy 
+                on the long term. But this is not the case for all women. Some are more virulent 
+                like Hubertine Auclert who wishes the tax strike and to register the women on the electoral lists. 
+                electoral lists.
+            </p>
+        </div>
+
+        <div class="bloc">   
+            <h4> The advancement of feminism </h4>
+        
+                <p> 
+                    On July 14, 1881 the first feminist demonstration organized by Hubertine Auclert took place, 
+                    this demonstration with goal to stop the refusal to grant rights to the women. Following this 
+                    demonstration the word feminism takes all its sense because until now the word was used for men where 
+                    men where the virility stopped developing. From the 1890s onwards, more and more feminist 
+                    feminist associations are created. Their goal is not the same for all the associations 
+                    are each different. In 1891 there is a French federation created to regroup 
+                    the feminist societies which will allow to make evolve the rights of the women and 
+                    civil rights. Thanks to these movements new rights were accepted like the fact 
+                    to be able to divorce.
+                </p>
+        </div>
+
+        <div class="bloc">
+            <img class="main__article1" src="public/img/vote.svg">
+
+            <h5>Photo of women demonstrating for the right to vote</h5>
+        </div>
+
+        <div class="bloc">    
+                
+            <p> 
+                In 1909 the feminists created the French Union for Women's Suffrage. 
+                The Union evolved rapidly, from 6,000 to 12,000 members from 1912 to 1914. They doubled the number 
+                of members in only 2 years. Many newspapers were published at that time such as La Suffragiste 
+                by Madeleine Pelletier, the themes discussed were the right to vote, sexual harassment... 
+                The first world war slowed down the feminist movement because they privileged the efforts of the war.
+                Moreover, women had to stay at home because of the men who had gone to fight. 
+                In 1930, the rise of unemployment sent women back to their homes. This period marked the end of the 
+                the first wave of feminism. in 1861.
+            </p>
+        </div>
+
+        <div class="bloc">   
+            <a href="article2EN.html">
+            <p> 
+                This is my second article about feminism but this time the feminism of our time. 
+                You will be able to compare the different ways of fighting for the equality and the rights of 
+                of women between these 2 times.
+            </p>
+
+            <img class="main__article1" src="public/img/article2.svg">
+
+            <h3>Taylor Swift new figure of feminism</h3>
+
+            <p class="texte__intro__article"> How Taylor Swift was able to use her global influence 
+                to help the feminist movement move forward.
+            </p>
+            </a>
+        </div>
+
+        <a href="#header" class="header__fleche"><img src="public/img/fleche.svg" alt="fleche"></a>
+
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contactEN.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

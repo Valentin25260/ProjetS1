@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <div class="bloc">   
+            <h2> About us </h2>
+    
+            <p class="texte__chapeau">
+                My name is Valentin Tholomier and I am in my first year of MMI (Multimedia and Internet)
+                in Montbéliard. I made this website for a project given by the teachers of the school. 
+                If you have spotted an error or you want to help to complete the site, 
+                do not hesitate to contact me among these different possibilities.
+            </p>
+        </div>
+    
+        <div class="bloc">   
+            <h2> Contact </h2>
+    
+            <p>
+                Here are the different ways to contact me if you need information.
+                <br><br>
+    
+                - Email address  :  vtholomier@gmail.com<br>
+                 
+                - Instagram       :  Tlm_Valentin<br>
+                - Phone        :  07 67 57 18 75<br>
+                
+            </p>
+        </div> 
+
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contact.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

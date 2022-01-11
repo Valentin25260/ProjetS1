@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <h1 class="main__nomsite">Femme pour toujours</h1>
+        
+        <p class="main__introduction">Discover the 3 articles about feminism. 
+            Learn more about feminism which is now a hot topic. 
+            You will discover a new vision and understand what feminism really is.
+        </p>
+       
+        
+        <div>
+        <center><img class="main__img__article1" src="public/img/artcile1.png"></center>
+        </div>
+
+        <div class="main__blocblanc">
+            <a href="article1EN.html" class="main__lien__article1"><h3>First wave of feminism in France</h3>
+
+                <p class="main__introduction__article1">Where did the first feminists appear from 
+                    how did they gradually manage to make themselves heard and start to have results 
+                    results in their fight for equality between men and women.
+                    
+                <p>
+            </a>
+
+        </div>
+
+        <img class="main__img__article2" src="public/img/article2.svg">
+        
+        <div class="main__blocblanc">
+            <a href="article2EN.html" class="main__lien__article2"><h3>Taylor Swift new figure of feminism</h3>
+
+                <p class="main__introduction__article1">How Taylor Swift has managed to use her global influence 
+                    to help the feminist movement move forward.
+                </p>
+            </a>
+        </div>
+           
+
+        
+
+        <img class="main__img__article3" src="public/img/article3.svg">
+
+        <div class="main__blocblanc">
+            <a href="article3EN.html" class="main__lien__article3"><h3>Gloria Allred: Women's Advocate</h3>
+
+                 <p class="main__introduction__article2">Gloria Allred: Women's Advocate
+
+                    Gloria Allred is a world-renowned lawyer who has spent her life 
+                    throughout her life she will defend women against inequality, sexual assault ... 
+                    You will discover all that she has been able to accomplish and what she continues to accomplish during her life.  
+                </p>
+            </a>
+        </div>
+
+        <a href="#header"><img src="public/img/fleche.svg"  class="header__fleche" alt="fleche"></a>
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contact.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

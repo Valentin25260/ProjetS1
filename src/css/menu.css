@@ -39,6 +39,20 @@
     font-size:22px;
     line-height: 27px;
   }
+
+  .menu__english{
+    color: #000000;
+    text-decoration: none;
+    font-size:22px;
+    line-height: 27px;
+  }
+
+  .menu__eng{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -30px;
+    text-align: center;
+  }
   
   
   /* Mise en forme du bouton de menu "Hamburger" */
@@ -100,6 +114,7 @@
 button.header__menu-btn.menu-btn{
     border:0px solid red;
     background-color:transparent;
+    height: 30px;
 }
 
 ul {
