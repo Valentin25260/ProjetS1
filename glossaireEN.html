@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/font.css">
+   
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+
+
+<body>
+    
+    
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo"><img src="public/img/logo.svg" alt="logo"></a>
+            <div class="boutonmenu">    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item"><a class="menu__link" href="accueilEN.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article1EN.html">First wave of feminism in France</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article2EN.html">Taylor Swift new figure of feminism</a></li>
+                  <li class="menu__item"><a class="menu__link" href="article3EN.html">Gloria Allred : Women's advocate</a></li>
+                  <li class="menu__item"><a class="menu__link" href="galeriefriseEN.html">Galerie & Frise</a></li>
+                  <li class="menu__item"><a class="menu__link" href="glossaireEN.html">Glossaire</a></li>
+                  <li class="menu__item"><a class="menu__link" href="projetsEN.html">Autres Projets</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contactEN.html">Contact à propos</a></li>
+                  <li class="menu__eng"><a class="menu__english" href="index.html">Français</a></li>            
+                </ul>
+            </nav>
+    </header>
+        
+
+    
+    <main class="main">
+        
+        <div class="bloc">   
+            <h2> Glossary </h2>
+    
+            <p class="texte__chapeau">
+                You will find definitions of words that may be difficult for you to understand.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">   
+            
+            <p class="texte__chapeau">
+                Feminism
+            </p>
+    
+            <p>
+                Doctrine that advocates equality between men and women, 
+                and the extension of the role of women in society.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+    
+            <p class="texte__chapeau">
+                Feminist movement            </p>
+    
+            <p>
+                Movement for the improvement and extension of the role and rights of 
+                the role and rights of women in society.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+            <p class="texte__chapeau">
+                Nobel Peace Prize 
+            </p>
+    
+            <p>
+                The Nobel Peace Prize is awarded to "the individual or community who has made the greatest or best 
+                contributed most or best to the rapprochement of peoples, to the abolition or reduction of standing armies 
+                to the gathering and propagation of progress for peace" according to the wishes, defined by 
+                by the will of Alfred Nobel.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+            <p class="texte__chapeau">
+                Rape
+            </p>
+    
+            <p>
+                An act by which one person forces another to have sexual 
+                to have sexual relations with another person by violence.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+            <p class="texte__chapeau">
+                Claim
+            </p>
+    
+            <p>
+                To claim something to which one has a right.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+            <p class="texte__chapeau">
+                Work  
+            </p>
+    
+            <p>
+                Scientific, technical or literary text. In this case it is literary.
+            </p>
+        </div>
+    
+        <div class="bloc__glossaire">  
+            <p class="texte__chapeau">
+                Nobel Peace Prize 
+            </p>
+    
+            <p>
+                The Nobel Peace Prize is awarded to "the individual or community who has made the greatest or best 
+                contributed most or best to the rapprochement of peoples, to the abolition or reduction of standing armies 
+                to the gathering and propagation of progress for peace" according to the wishes, defined by 
+                by the will of Alfred Nobel.
+            </p>
+        </div>
+
+      
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__nom">Tholomier Valentin - Group C2</p>
+
+        <div class="reseauxsociaux">
+            <center>
+            <a href="https://facebook.com" class="footer__facebook"><img src="public/img/facebook.svg" alt="icone facebook"></a>
+            <a href="https://instagram.com" class="footer__instagram"><img src="public/img/instagram (1).svg" alt="icone instagram"></a>
+            <a href="https://twitter.com" class="footer__twitter"><img src="public/img/twitter (1).svg" alt="icone twitter"></a>
+            </center>
+        </div>
+
+        <p class="footer__contact">
+            To contact me by email<a href="contactEN.html"><strong> click here</strong></a>
+        </p>
+
+        <p class="footer__mmi">Project realized within the framework of a pedagogical exercise 
+            in the MMI department of Montbéliard
+        </p>
+
+
+    </footer>
+</body>
+
+
+</html>

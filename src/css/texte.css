@@ -27,10 +27,7 @@ p{
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
-    /* or 123% */
-
     text-align:justify;
-
     color: #000000;
 }
 
@@ -76,4 +73,14 @@ h5{
     line-height: 16px;
     text-align: center;
 }
+
+.texte__ici{
+
+    color: #000000;
+    font-style: italic;
+}
+
+
+
+
 
